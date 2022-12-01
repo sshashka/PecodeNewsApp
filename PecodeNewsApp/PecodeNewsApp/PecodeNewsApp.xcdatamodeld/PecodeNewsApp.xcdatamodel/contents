@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SavedNewsModel" representedClassName=".SavedNewsModel" syncable="YES">
+        <attribute name="articleDescription" optional="YES" attributeType="String"/>
+        <attribute name="author" attributeType="String"/>
+        <attribute name="content" attributeType="String"/>
+        <attribute name="publishedAt" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="url" attributeType="String"/>
+        <attribute name="urlToImage" attributeType="String"/>
+        <relationship name="source" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SavedSourcesModel"/>
+    </entity>
+    <entity name="SavedSourcesModel" representedClassName=".SavedSourcesModel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+</model>
